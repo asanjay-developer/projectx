@@ -190,6 +190,103 @@ footer{
     background-color: darkcyan;
     color: white;
 }
+
+
+/* collecion page  */
+
+.product-page{
+    margin-top: 20px;
+}
+
+.search{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+.search input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.search input:focus{
+    outline: none;
+}
+.products-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.products{
+    text-align: center;
+    flex-basis: 20%;
+}
+/* contact page  */
+
+.contact-page{
+    margin-top: 20px;
+    margin-left: 20%;
+    height: 100%;
+}
+.contact{
+background-color: darkcyan;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+.contact h1{
+    color: white;
+}
+.contact input{
+    display: block;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid white;
+    margin: 10px;
+    font-size: 20px;
+    margin-left: 4%;
+    border-radius: 10px;
+}
+.contact input:focus{
+    outline: none;
+}
+.contact textarea{
+    display: block;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid white;
+    margin: 10px;
+    font-size: 20px;
+    margin-left: 4%;
+    border-radius: 10px;
+}
+.contact textarea:focus{
+    outline: none;
+}
+
+.contact button{
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    color: darkcyan;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact button:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
 /* media query */
 
 @media screen and (max-width:700px) {
@@ -215,5 +312,18 @@ footer{
 
     .service-container-2 {
         flex-direction: column;
+    }
+    .contact input{
+        padding: 10px;
+    }
+    .contact textarea{
+        padding: 10px;
+    }
+    .contact button{
+        padding: 10px;
+        width: 30%;
+    }
+    .contact-page{
+        margin-left: 10%;
     }
 }
